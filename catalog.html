@@ -8,8 +8,17 @@
       <header>
 
         <a href="index.html">
-          <img src="img/invalid-name.png" alt="логотип Техномарт" width="109" height="19"/>
+          <img src="img/technomart-header.png" alt="логотип Техномарт" width="109" height="19"/>
         </a>
+
+        <label>
+          <img src="img/icon-search.svg" width="17" height="17" alt="search"/>
+       
+       
+           <form action="" method="POST">
+               <input type="search" name="search" id="search-header"/>
+           </form>
+       </label>
 
         <ul>
             <li><a href="#"><img src="img/icon-bookmark.svg" width="14" height="16"/>Закладки:</a></li>
@@ -58,7 +67,7 @@
       </header>
       <main>
         <header>
-          <div class="nav">
+          <div class="nav-main">
               <ul>
                   <li><a href="index.html"/><img src="img/icon-home.svg" width="14" height="12"/></li>
                   <li><a href="">Каталог</a></li>
@@ -71,19 +80,52 @@
 
         <section>
             <h2>Производители:</h2>
-              <ul>
-                  <li>Bosch</li>
-                  <li>Интеркол</li>
-                  <li>Makita</li>
-                  <li>Hitachi</li>
-              </ul>
+            
+            <form action="" method="">
+                <ul>
+                  <li>
+                    <label for="bosch-item">
+                       <input type="checkbox" name="bosch" id="bosch-item" checked/>Bosch
+                    </label>
+                  </li>
+                    <li>
+                      <label for="intercol-item">
+                         <input type="checkbox" name="intercol" id="intercol-item"/>Интеркол
+                       </label>
+                  </li>
+                     <li>
+                       <label for="Makita-item">
+                          <input type="checkbox" name="Makita" id="Makita-item" checked/>Makita
+                  </label>
+                  </li>
+                     <li>
+                        <label for="Dewalt-item">
+                            <input type="checkbox" name="Dewalt" id="Dewalt-item"/>Dewalt
+                        </label>
+                   </li>
+                       <li>
+                          <label for="Hitachi-item">
+                              <input type="checkbox" name="Hitachi" id="Hitachi-item"/>Hitachi
+                      </label>
+                  </li>
+                </ul> 
+            
             <hr>
               <h2>Питание:</h2>
-                <ul>
-                    <li>Аккумуляторные</li>
-                    <li>Сетевые</li>
-                </ul>
+
+                    
+                       <label for="battery">
+                           <input type="radio" name="nutrition" id="battery" value="аккумуляторные" checked>
+                      Аккумуляторные
+                    </label>
+                
+                    <label for="network">
+                      <input type="radio" name="nutrition" id="network" value="сетевые">
+                      Сетевые</label>
+                    
+                
             <button type="button">Показать</button>
+          </form>
         </section>
 
         <section>
@@ -208,6 +250,19 @@
                 <p>Разработано</p>
                   <a href="index.html">htmlacademy.ru</a>
       </footer>
+
+      <section>
+          <h2>
+            <img src="img/modal-check.svg" alt="" width="66" height="66"/>Товар добавлен в корзину!</h2>
+
+          <p><a href="">Оформить заказ</a></p>
+
+          <button type="button">Продолжить покупки</button>
+          <button type="button">
+              <img src="img/modal-close.svg" alt="Закрыть" width="21" height="21"/>
+          </button>
+            
+      </section>
     
 
   </body>
