@@ -11,14 +11,15 @@
           <img src="img/technomart-header.png" alt="логотип Техномарт" width="109" height="19"/>
         </a>
 
-          <label>
+        <form action="" method="POST"></form>
+
+          <label for="search-header">
              <img src="img/icon-search.svg" width="17" height="17" alt="search"/>
+          </label>
           
-          
-              <form action="" method="POST">
                   <input type="search" name="search" id="search-header"/>
               </form>
-          </label>
+          
 
         <ul>
             <li><a href="#"><img src="img/icon-bookmark.svg" width="14" height="16"/>Закладки:</a></li>
@@ -208,28 +209,23 @@
           <section>
               <h2>Сервисы</h2>
                 <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-
-              
-                
-
+              <div>
                 <ul>
                     <li>
                       <h3>
                         <a href="">Доставка</a>
                      </h3>
                         <p>Мы с удовольствием доставим ваш товар прямо  к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,  поднимая его на ваш этаж!</p>
-                       <img src="img/delivery.png" alt="delivery" width="468" height="261"/>
-
-
                     </li>
 
-                    <li><a href="">Гарантия</a></li>
-                    <li><a href="">Кредит</a></li>
+                    <li>
+                      <h3><a href="">Гарантия</a></h3></li>
+                    <li><h3><a href="">Кредит</a></h3></li>
                 </ul>
-
-                
-
-                
+              </div>
+              <div>
+                <img src="img/delivery.png" alt="delivery" width="468" height="261"/>
+              </div>
 
             </section>
 
@@ -299,23 +295,26 @@
 
       <section>
                 <h2>Напишите нам!</h2>
-              <label for="full-name">Ваше имя:
+       <form action="" method="POST">
+           
+           <div>
+              <label for="full-name">Ваше имя:</label>
                   <input name="full-name" type="text" id="full-name"/>
-
-              </label>
-              <label for="mail">Ваш e-mail:
+          </div>
+        <div>   
+              <label for="mail">Ваш e-mail:</label>
                   <input type="email" name="mail" id="mail"/>
-              </label>
-              <label for="text-letter">Текст письма:
-                  <textarea id="text-letter" rows="5" cols="50">
-                      В свободной форме
-                  </textarea>
-              </label>
+        </div> 
+       <div>    
+              <label for="text-letter">Текст письма:</label>
+                  <textarea id="text-letter" rows="5" cols="50">В свободной форме</textarea>  
+       </div>      
           <button type="submit">Отправитт</button>
 
           <button type="button">
             <img src="img/modal-close.svg" alt="Закрыть" width="21" height="21"/>
         </button>
+      </form>
 
       </section>
       <section>
