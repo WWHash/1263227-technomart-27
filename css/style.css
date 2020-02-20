@@ -2,7 +2,7 @@ body {
     margin: auto;
     padding: 0;
     width: 1200px;
-    font-family: 'Cuprum', sans-serif;
+    font-family:  'Cuprum', sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: normal;
@@ -26,7 +26,6 @@ a {
   }
 .main-header {
     width: 1200px;
-    height: 320px;
     background-color: #f4f7f9;
 }
 .header-top  {
@@ -35,7 +34,7 @@ a {
     align-items: center;
     background-color: #293449;
     width: 1200px;
-    height: 42px;
+    
 }
 .top-list {
     display: flex;
@@ -124,25 +123,29 @@ a {
 
 .main-nav {
     width: 940px;
-    height: 60px;
-    background-color: #32425c;
-    margin-top: 20px;
     margin-left: 130px;
+    margin-bottom: 160px;
+
+    background-color: #32425c;
 }
+
 .nav-list {
     display: flex;
-    justify-content: space-around;
-    font-size: 17px;
-    line-height: 17px;
-}
-.nav-list li {
-    padding: 20px;
+    justify-content:  space-between;
+    flex-grow: 1;
     list-style: none;
 }
+
 .nav-list a {
-    
+    display: block;
+    flex-grow: 1;
+    padding: 20px;
     color: #ffffff;
 }
+.nav-list a:hover {
+    background-color: #293449;
+}
+
 /*шапка */
 
 
@@ -174,17 +177,20 @@ a {
     margin-left: 23px;
 }
 .catalog .catalog-item p {
-    display: block;
-    min-width: 50px;
-    min-height: 30px;
+    display: inline-block;
+    width: 135px;
+    height: 38px;
+    border-radius: 3px;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    margin-left: 25px;
+    margin-bottom: 40px;
     
     color: #ffffff;
-    padding: 5px;
+    
 
-    background-color: rgba(0, 0, 0, 0.3)    
+    background-color: rgba(0, 0, 0, 0.2)    
 }
 
 
@@ -342,6 +348,7 @@ a {
     height: 89px;
     margin-right: 130px;
     margin-left: 130px;
+    
     background-color: #f9f5f0;
 }
 
@@ -368,13 +375,6 @@ a {
     text-transform: uppercase;
 }
 
-.container {
-    width: 940px;
-
-    margin-left: 130px;
-    margin-right: 130px;
-    
-}
 
 .brands-list{
     display: flex;
@@ -384,49 +384,261 @@ a {
     margin-top: 10px;
 
 
+    width: 940px;
+
+    margin-left: 130px;
+    margin-right: 130px;
     list-style: none;
 }
 
 
-.brands-list-item {
+.brands-list-item a {
+    display: block;
     width: 220px;
     height: 145px;
 
     margin: 6px;
     border: 1px solid #eaeaea;
-}
 
-
-.brands-list-item img {
     text-align: center;
     vertical-align: middle;
+    
 }
 /*брэнды*/
+
+/*сeрвисы*/
+.main-service {
+    width: 1200px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    border: 1px solid
+    transparent;
+    background-color: #f4f7f9;
+}
+
+.main-service h2 {
+    font-size: 30px;
+    line-height: 30px;
+
+    margin-top: 68px;
+    margin-left: 131px;
+
+    text-transform: uppercase;
+    color: black;
+}
+
+.main-service .header-service p {
+    width: 398px;
+    height: 37px;
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 24px;
+
+    margin-top: 38px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+
+    white-space: pre-wrap;
+    color: black;
+}
+
+.main-service .service-list {
+    padding: 0;
+    margin: 0;
+    margin-left: 153px;
+    margin-bottom: 99px;
+    position: relative;
+    list-style: none;
+}
+
+.main-service .service-list p {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    width: 275px;
+    height: 83px;
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 24px;
+
+    white-space: pre-wrap;
+}
+
+.service-list .service-item a {
+    display: block;
+    width: 240px;
+    
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+
+    padding: 10px 10px;
+
+    color: #ffffff;
+
+    background-color: #32425c;
+}
+.service-item a:hover {
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+/*сeрвисы*/
 
 
 /*класс инфо*/
 .info {
     display: flex;
+    justify-content: space-around;
 }
-.info-item h2 {
+
+.info-section {
+
+  
+}
+
+.info-section h2 {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    text-align: center;
 }
-.info-item p {
+.info-section p {
+    width: 519px;
     font-family: "PT Sans", sans-serif;
     font-size: 13px;
     line-height: 24px;
+
+    white-space: pre-wrap;
 }
-.info-item li {
+.info-section li {
    margin-bottom: 10px;
    font-size: 18px;
    line-height: 20px; 
 }
-.info-item a {
-    padding: 5px;
+.info-section a {
+    display: inline-block;
+    padding: 10px 40px;
+
+    font-size: 14px;
+    line-height: 18px;
     color: #ffffff;
     margin-top: 20px;
     background-color: #ee3643;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
+
+
+.info-main p {
+    width: 388px;
+
+    white-space: pre-wrap;
+}
+
+.info-section .info-contacts {
+    width: 179px;
+    white-space: pre-wrap;
+} 
+
+.info-btn {
+    width: inherit;
+    text-align: center;
+}
+
 /*класс инфо*/
+
+
+/*футер*/
+
+.main-footer {
+    width: 1200px;
+
+    margin-top: 60px;
+
+    border: 1px solid red;
+
+    background-color: #32425c;
+}
+
+.logo-footer a {
+    display: block;
+    width: 220px;
+    height: 68px;
+    margin-left: 130px;
+    margin-bottom: 100px;
+
+
+    background-color: #ee3643;
+    background-image: url(../img/technomart-footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*футер*/
+
+
+
+/*футер-3*/
+.footer-3 {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+
+
+    background-color: #293449;
+}
+
+.copyright p {
+    width: 228px;
+    font-size: 16px;
+    list-style: 18px;
+    color: #ffffff;
+
+    margin: 20px auto;
+
+    white-space: pre-wrap;
+}
+
+
+.social ul {
+    display: flex;
+    
+    list-style: none;
+}
+
+.social-list a{
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 2px;
+    border-radius: 50%;
+
+    background-color: #212a3a;
+
+}
+
+.social-list .social-vk a {
+    background:  #212a3a url(../img/vk-icon.svg) no-repeat center;
+}
+.social-list .social-fb a {
+    background:  #212a3a url(../img/fb-icon.svg) no-repeat center;
+}
+.social-list .social-insta a {
+    background:  #212a3a url(../img/insta-icon.svg) no-repeat center;
+}
+
+
+.footer-3 > p {
+    
+    color: #ffffff;
+}
+.footer-3 a {
+    display: block;
+    color: #ffd180;
+}
+/*футер-3*/
