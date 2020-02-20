@@ -26,6 +26,7 @@ a {
   }
 .main-header {
     width: 1200px;
+    min-height: 320px;
     background-color: #f4f7f9;
 }
 .header-top  {
@@ -34,60 +35,41 @@ a {
     align-items: center;
     background-color: #293449;
     width: 1200px;
+    height: 42px;
     
 }
-.top-list {
+
+.header-logo a {
+    display: block;
+    width: 220px;
+    height: 47px;
+    
+    margin-left:100px;
+    background: #ee3643 url(../img/technomart-header.png) no-repeat center;
+    text-align: center;
+}
+
+
+.header-menu ul {
     display: flex;
     
-}
-.header-top li {
-    padding: 10px;
+    margin-right: 130px;
+    
     list-style: none;
-    margin-left: 10px;
 }
-.header-top a {
+
+.menu-list a {
+    display: block;
+    padding: 12px 15px;
+    margin-right: 15px;
     color: #ffffff;
 }
 
-.top-list li:last-child {
+.menu-list li:last-child {
+
     background-color: #63a63e;
 }
 
-
-.form-search {
-    margin-left: 0;
-}
-
-
-
-.in a {
-    font-size: 21px;
-    line-height: 21px;
-    padding: 10px;
-    color: #000000;
-    background-color: #ffffff;
-}
-.reg a {
-    padding: 10px;
-    color: #000000;
-    background-color: #ffffff;
-}
-.top-btn { 
-    display: flex;
-}
-.top-btn.in {
-    width: 121px;
-    height: 45px;
-}
-
-
-.header-logo {
-    width: 220px;
-    padding: 15px;
-    margin-left: 130px;
-    background-color: #ee3643;
-    text-align: center;
-}
 
 
 .header-contact {
@@ -95,17 +77,23 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #f4f7f9;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .header-contact li {
     list-style: none;
 }
 .contact-info p {
+    width: 196px;
+    white-space: pre-wrap;
     color: #ee3643;
     font-size: 16px;
     line-height: 23px;
     margin-left: 183px;
     font-style: italic;
+}
+
+.contacts {
+    margin: 0;
 }
 .contact-phone {
     color: #ee3643;
@@ -119,6 +107,36 @@ a {
     font-size: 14px;
     line-height: 24px;
 }
+
+
+.header-btn {
+    margin-right: 130px;
+}
+
+.btn-list {
+    display: flex;
+}
+
+.btn-item a {
+    display: block;
+    font-size: 21px;
+    line-height: 21px;
+
+    padding: 10px 25px;
+    margin-right:  10px;
+
+    color: #000000;
+
+
+    background-color: #ffffff;
+
+}
+
+
+
+
+
+
 
 
 .main-nav {
