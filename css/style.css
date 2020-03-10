@@ -150,19 +150,20 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
     padding-top: 30px;
     padding-bottom: 21px;
 }
-
+.contact-title {
+    margin-left: 55px;
+    margin-right: 45px;
+}
 
 .contact-title a {
     display: block;
     font-style: italic;
     font-size: 16px;
     line-height: 21px;
-    margin-left: 55px;
-    margin-right: 45px;
+    
 
     color: #ee3643;
 }
@@ -195,6 +196,7 @@ a {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin: 0;
 }
 .user-init li {
     margin-left: 10px;
