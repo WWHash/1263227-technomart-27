@@ -125,8 +125,6 @@ a {
 }
 
 
-
-
 .user-menu-list a:hover,
 .user-menu-list a:focus {
     background-color: #212a3a;
@@ -150,8 +148,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 21px;
+    padding: 47px 0;
+    
 }
 .contact-title {
     margin-left: 55px;
@@ -290,9 +288,11 @@ a {
     justify-content: space-between;
 }
 
+.column-promo {
+    width: 300px;
+}
 
 .promo-item {
-    width: 255px;
     padding: 20px 22px;
     margin-bottom: 20px;
 }
@@ -369,7 +369,7 @@ a {
 /*slider*/
 
 
-.column-1 {
+.column-slider {
     width: 620px;
 }
 
@@ -397,30 +397,30 @@ a {
     margin-top: 10px;
 }
 
-.slider-title  {
+.slider figcaption  {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    padding: 26px;
     font-size: 36px;
     line-height: 36px;
     color: #ffffff;
-}
-
-.slider-title strong {
     text-transform: uppercase;
 }
-.slider-title p {
-    
+
+.slider-text {
     font-size: 18px;
-    line-height: 0;
+    line-height: 24px;
     text-transform: none;
 }
-
 
 .slider .button-red {
     position: absolute;
     left: 20px;
     bottom: 20px;
+}
+
+.slider button {
+    width: 22px;
+    height: 40px;
 }
 /*slider*/
 /*popular-item*/
