@@ -51,12 +51,11 @@
 
       <div class="header-contact container">
 
-           <div class="contact-title">
-              <a href="index.html">Интернет-магазин<br>
-                                   строительных материалов<br>
-                                    и инструментов для ремонта
-              </a>
-           </div>
+                <p class="contact-title">Интернет-магазин<br>
+                  строительных материалов<br>
+                  и инструментов для ремонта
+                </p>
+           
         
            <div class="contacts">  
                <div class="contact-phone">+7 (812) 555-05-55</div>
@@ -98,14 +97,16 @@
         <div class="promo container">
           <section class="row-1">
     
+              <div class="column-promo">
                   <div class="promo-item materials">
-                    <h3>Материалы</h3>
+                        <h3>Материалы</h3>
                         <div class="promo-link">
                           <a href="">На любой вкус</a>
                         </div>
                           <div class="promo-icon"></div>
                   </div>
-
+              </div>
+              <div class="column-promo">
                    <div class="promo-item tool">
                        <h3>Инструмент</h3>
                        <div class="promo-link">  
@@ -113,7 +114,8 @@
                        </div>
                        <div class="promo-icon"></div>
                    </div>
-
+              </div>
+               <div class="column-promo">
                   <div class="promo-item equipment">
                      <h3>Техника</h3>
                      <div class="promo-link">
@@ -121,15 +123,17 @@
                       </div>
                     <div class="promo-icon"></div>
                   </div>
+               </div>
               
           </section>
 
           <section class="row-2">
-             <div class="column-1">
-                <figure class="slider slider-1">
-                    <figcaption class="slider-title">
-                        <strong>дрели</strong>
-                        <p>Соседям на радость!</P>
+             <div class="column-slider">
+               <div class="slider">
+                  <figure class="slider-1">
+                      <figcaption>
+                         <div class="slider-title">дрели</div>
+                         <div class="slider-text">Соседям на радость!</div>
                     </figcaption>
                     <img src="img/slider-image-1.png" width="620" height="266" alt=""/>
                     <div class="button-red">
@@ -137,20 +141,25 @@
                   </div>
                </figure>
 
-               <figure class="slider slider-2">
-                <figcaption class="slider-title">
-                    <strong>Перфораторы</strong>
-                    <p>Настоящие мужские игрушки</P>
-                </figcaption>
+               <figure class="slider-2">
+                  <figcaption class="slider-title">
+                     <div>Перфораторы</div>
+                     <div>Настоящие мужские игрушки</div>
+                 </figcaption>
                 <img src="img/slider-image-2.png" width="620" height="266" alt=""/>
                 <div class="button-red">
                   <a href="">Открыть каталог</a>
               </div>
            </figure>
+
+           <button class="button-back" type="button"></button>
+           <button class="button-next" type="button"></button>
+           
+          </div>
                 
             </div>
 
-            <div class="column-2">
+            <div class="column-promo">
     
                       <div class="promo-item sale">
                           <h3>Скидки 50%</h3>
@@ -320,7 +329,7 @@
             </div>
             </section>
    
-       <div class="delivery-addres-map container">
+       <div class="delivery-company-map container">
            <section class="delivery-section">
                <div class="title-delivery">
                    <h2>Компания «Техномарт»</h2>
@@ -331,19 +340,19 @@
                   </p> 
                </div>
 
-               <div class="delivery-list">                  
-                 <ul>
+                                
+                 <ul class="delivery-list">
                     <li>Деловые линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
-                  </ul>
-              </div>
-              <div class="button-red">
+                </ul>
+              
+              <div class="delivery-button">
                 <a href="#">Подробнее о компании</a>
               </div>
           </section>
 
-            <section class="addres-map-section">
+            <section class="map-section">
                  <h2>Контакты</h2>
                  <p>Вы можете забрать товар сами,<br>
                        заехав в наш офис:
@@ -361,27 +370,25 @@
 
     
       <footer class="main-footer">
-        <div class="container">
-            <div class="column">
-               <div class="footer-logo">
-                   <a href="index.html">
-                     <img src="img/technomart-footer.png" alt="Логотип Техномарт"/>
-                  </a>
-               </div>
-      
-               
+          <div class="container">
+
+             <div class="column-1">
+                 <div class="footer-logo">
+                     <a href="index.html">
+                      <img src="img/technomart-footer.png" alt="Логотип Техномарт"/>
+                    </a>
+                </div>             
                   <ul class="footer-nav">
                       <li><a href="">Компания</a></li>
                       <li><a href="">Новости</a></li>
                       <li><a href="">Каталог</a></li>
                       <li><a href="">Доставка</a></li>
                       <li><a href="">Контакты</a></li>
-                  </ul>
-                    
+                  </ul>     
              </div>
         
 
-             <div class="column">
+             <div class="column-2">
                  <p class="">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
                               +7 (812) 555-05-55
                 </p>   
@@ -394,15 +401,17 @@
                 </ul>
            
            </div>
-         </div>
+      </div>
+         
       
                       
-            <div class="footer bg-dark">
+            <div class="column-3 bg-dark">
                     <div class="footer-wrapper">
                       
                         <div class="copyright">
                             <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
                         </div>
+
                           <div class="social">
                                 <ul class="social-list">
                                   <li class="social-vk"><a href="#"></a></li>
@@ -418,43 +427,50 @@
                           <a href="">htmlacademy.ru</a>
                       </p>
                  </div>
-          </div>
+             </div>
+        
         
                   
                 
       </footer>
 
-      <section class="modal modal-login">
-                <h2>Напишите нам!</h2>
-       <form action="" method="POST">
-           
-           <div>
-              <label for="full-name">Ваше имя:</label>
-                  <input name="full-name" type="text" id="full-name"/>
-          </div>
-        <div>   
-              <label for="mail">Ваш e-mail:</label>
-                  <input type="email" name="mail" id="mail"/>
-        </div> 
-       <div>    
-              <label for="text-letter">Текст письма:</label>
-                  <textarea id="text-letter" rows="5" cols="50">В свободной форме</textarea>  
-       </div>      
-          <button type="submit">Отправить</button>
+      <section class="modal modal-index-technomart">
+         <h2 class="visually-hidden">Напишите нам!</h2>
 
-          <button type="button">
-            <img src="img/modal-close.svg" alt="Закрыть" width="21" height="21"/>
-        </button>
+         <form class="form-index-modal" action="" method="POST">
+
+          <div class="form-fields">
+            <div class="form-row-1">
+               <div class="form-row-1-wrapper">
+                  <p class="modal-description"><label for="name">Ваше имя:</label></p>
+                  <p><input name="name" type="text" id="name" placeholder="Имя Фамилия"/></p>
+              </div>
+
+              <div class="form-row-1-wrapper">
+                <p class="modal-description"><label for="mail">Ваш e-mail:</label></p>
+                <p><input type="email" name="mail" id="mail" placeholder="email@example.com"/></p> 
+             </div>
+           </div>
+           <div class="form-row-2">
+                <p class="modal-description"><label for="text-letter">Текст письма:</label></p>
+                <p><textarea id="text-letter" rows="5" cols="50">В свободной форме</textarea></p> 
+           </div>
+        </div>
+
+         <div class="form-submit">   
+             <button class="button" type="submit">Отправить</button>
+        </div>
+
+          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
 
       </section>
-      <section class="modal modal-map">
-            <h2>Как к нам проехать:</h2>
-            <img src="img/map-popap.png" alt="" width="940" height="446"/>
 
-            <button type="button">
-              <img src="img/modal-close.svg" alt="Закрыть" width="21" height="21"/>
-          </button>
+      <section class="modal modal-map">
+            <h2 class="visually-hidden">Как к нам проехать:</h2>
+            <p><img src="img/modal-map.png" alt="Большая Конюшенная, 19" width="940" height="446"/></p>
+
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
     
 
