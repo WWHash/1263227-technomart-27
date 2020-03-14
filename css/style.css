@@ -11,6 +11,24 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #ee3643;
+    border-radius: 3%;
+    text-transform: uppercase;
+}
+
 
 .visually-hidden {
     position: absolute;
@@ -31,7 +49,7 @@ a {
 }
 
 
-.bg-dark {
+.top-line {
     background-color: #293449;
     min-height: 42px;
 }
@@ -149,7 +167,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 47px 0;
+    padding: 47px 0 43px 0;
     
 }
 .contact-title {
@@ -443,43 +461,45 @@ a {
 }
 
 .button-next {
-    right: 0;
+    right: 20px;
     background-image: url(../img/icon-right.svg);
 }
 .button-back {
-    left: 0;
+    left: 20px;
     background-image: url(../img/icon-left.svg);
 }
 /*slider*/
 /*popular-item*/
 
-.title-popular {
+.popular-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 
-    padding: 10px 20px;
+    padding: 25px 20px;
     margin-bottom: 20px;
     background-color: #f9f5f0;
 }
 
-.title-popular h2 {
+.popular-items h2 {
     font-size: 30px;
+    font-weight: normal;
     line-height: 30px;
+    margin-left: 28px;
+    padding: 6px 0;
     color: #32425c;
     text-transform: uppercase;
 }
 
-.title-popular a {
+.popular-items a {
+    width: 253px;
 
     font-size: 14px;
     line-height: 18px;
-    padding: 10px 60px;
+    padding: 10px 0px;
     color: #ffffff;
-    background-color: #ee3643;
-    border-radius: 3px;
-    text-transform: uppercase;
+
 }
 
 .catalog-items {
@@ -627,16 +647,6 @@ a {
     margin-bottom: 40px;
 }
 
-.title-brands {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    background-color: #f9f5f0;
-}
 
 .title-brands h2 {
     font-size: 30px;
@@ -673,7 +683,6 @@ a {
     display: inline-block;
     width: 220px;
     min-height: 145px;
-    margin-right: 13px;
     margin-bottom: 13px;
     border: 1px solid #eaeaea;
 }
@@ -743,23 +752,73 @@ a {
 /*брэнды*/
 /*сервисы*/
 
-.main-service {
+.service{
     margin-bottom: 40px;
     background-color: #f4f7f9;
 }
 
-.header-service h2 {
-    padding-top: 60px;
+.service h2,
+.company h2,
+.product-description h2 {
     font-size: 30px;
-    line-height: 30px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 28px 0;
+    color: #000;
     text-transform: uppercase;
 }
 
-.header-service p {
+.service p,
+.contact-company p,
+.about-company p,
+.product-description p {
     font-family: "PTSans", sans-serif;
     font-size: 13px;
     line-height: 24px;
-    width: 430px;
+    color: #000;
+}
+
+.about-service {
+    width: 400px;
+}
+
+.service-information {
+    position: relative;
+    margin: 70px 0 54px 0;
+    padding-bottom: 102px;
+}
+
+.service-information input[type="radio"],
+.service-information input[type="radio"] {
+    display: none;
+}
+
+.service-information label {
+    display: flex;
+    width: 217px;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 11px 0 17px 23px;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+    background-color: #32425c;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.service-information .slider {
+    position: relative;
+}
+
+.service-content {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 620px;
+    padding-bottom: 139px;
 }
 
 /*сервисы*/
