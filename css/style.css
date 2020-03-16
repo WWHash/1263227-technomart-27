@@ -1114,6 +1114,13 @@ aside h2 {
 }
 
 .filter-range {
+    margin-bottom: 20px;
+}
+
+.filter-range h3,
+.filter-checkbox h3,
+.filter-radio h3 {
+    padding: 10px 0;
     font-family: "PTSans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -1121,10 +1128,6 @@ aside h2 {
     color: #000;
 
     text-transform: uppercase;
-}
-
-.filter-range p {
-    padding: 10px 6px;
 }
 
 .form-range {
@@ -1136,6 +1139,85 @@ aside h2 {
     text-align: center;
     vertical-align: middle;
 }
+
+.filter-checkbox .checkbox,
+.filter-radio .radio {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+}
+
+.filter-checkbox {
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.filter-checkbox label,
+.filter-radio label {
+    position: relative;
+    padding: 0 0 0 30px;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.filter-checkbox label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 19px;
+    height: 19px;
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;
+    content: "";
+}
+
+.filter-checkbox input[type="checkbox"]:checked + label::after {
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    width: 7px;
+    height: 16px;
+    border-right: 5px solid #c9c9c9;
+    border-bottom: 5px solid #c9c9c9;
+    transform: rotate(45deg);
+    box-shadow: 2px 0 0 0 white, inset -2px 0 0 0 white;
+    content: "";
+}
+
+.filter-radio label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 2px solid #c9c9c9;
+    content: "";
+}
+
+.filter-radio input[type="radio"]:checked + label::after {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #c9c9c9;
+    content: "";
+}
+
+.filter-checkbox input,
+.filter-radio input {
+    visibility: hidden;
+}
+
 
 
 .description-perforator {
@@ -1154,6 +1236,62 @@ aside h2 {
     font-family: "PTSans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
+}
+
+.result .filter {
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #000;
+    background-color: #f7f3ec;
+    text-transform: uppercase;
+}
+
+.result .filter a {
+    color: red;
+}
+
+.result .filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.result .filter-by {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 360px;
+}
+
+.result .filter-by a:first-child {
+    color: #f06870;
+    text-transform: uppercase;
+}
+
+.result .filter-by a:nth-child(2),
+.result .filter-by a:last-child {
+    color: #b6b3ae;
+    border-bottom: 1px dotted #ee3643;
+    
+}
+
+.filter-btn {
+    width: 140px;
+    height: 39px;
+
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
 }
 
 /*страница каталога*/
