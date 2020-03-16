@@ -84,53 +84,54 @@
 
               <form action="" method="POST">
 
-              <div class="filtr-range">
+              <div class="filter-range">
 
-                  <div class="filter-range">
-                      <p>Цена :</p>
+                      <h3>Цена :</h3>
                       <div class="form-range">
                         <label for="range" class="visually-hidden">Цена :</label>
                         <input id="range" type="range" min="0" max="30000" step="1">
                      </div>
-                  </div>
+                
               </div>
 
-              <section class="filter-1">
+              <section class="filter-checkbox">
                   <h3>Производители:</h3>
                         
                   <div class="checkbox">
+                      <input id="bosch" type="checkbox" name="bosch" checked/>
                       <label for="bosch">Bosch</label>
-                      <input id="bosch" type="checkbox" name="bosch" checked/>   
-
-                      <label for="intercol">Интеркол</label>
+                         
                       <input id="intercol" type="checkbox" name="intercol"/>
-
-                      <label for="Makita">Makita</label>
-                      <input id="Makita" type="checkbox" name="Makita" checked/>
-                                    
-                      <label for="Dewalt">Dewalt</label>
-                      <input id="Dewalt" type="checkbox" name="Dewalt"/>
+                      <label for="intercol">Интеркол</label>
                       
+                      <input id="Makita" type="checkbox" name="Makita" checked/>
+                      <label for="Makita">Makita</label>
+                      
+                      <input id="Dewalt" type="checkbox" name="Dewalt"/>              
+                      <label for="Dewalt">Dewalt</label>
+                      
+                      <input id="Hitachi" type="checkbox" name="Hitachi"/>
                       <label for="Hitachi">Hitachi</label>
-                      <input id="Hitachi-item" type="checkbox" name="Hitachi"/>
+                      
                   </div>
               </section>
                                     
-              <section class="filter-2">
+              <section class="filter-radio">
                 <h3>Питание:</h3>
                 
                 <div class="radio">
-                    <label for="battery">Аккумуляторные</label>
                     <input type="radio" name="nutrition" id="battery" value="аккумуляторные" checked>
+                    <label for="battery">Аккумуляторные</label>
+
                     
-                    <label for="network">Сетевые</label>
                     <input type="radio" name="nutrition" id="network" value="сетевые">
+                    <label for="network">Сетевые</label>
                 </div>
               </section>
                       
                     
                 
-             <button type="button">Показать</button>
+             <button class="filter-btn" type="button">Показать</button>
           </form>   
         </aside>
 
@@ -139,7 +140,18 @@
             <section class="result">
                 <h3 class="visually-hidden">Каталог</h3>
 
-               <div class="filter"></div>
+               <div class="filter">
+                    <span>Сортировка :</span>
+                    <div class="filter-by">
+                        <a class="" href="">По цене</a>
+                        <a class="" href="">По типу</a>
+                        <a class="" href="">По функционалу</a>
+                    </div>
+                    <div class="arrows-control">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+               </div>
 
                <div class="result-catalog">
 
@@ -192,6 +204,7 @@
                     </div>
 
                     <div class="catalog-item">
+                      <div class="flag flag-new">новинка</div>
                       <div class="actions">
                         <a href="#" class="buy">Купить</a>
                         <a href="#" class="bookmark">В закладки</a>
@@ -203,7 +216,6 @@
                     </div>
 
                     <div class="catalog-item">
-                      <div class="flag flag-new">новинка</div>
                       <div class="actions">
                         <a href="#" class="buy">Купить</a>
                         <a href="#" class="bookmark">В закладки</a>
@@ -216,6 +228,7 @@
 
 
                     <div class="catalog-item">
+                      <div class="flag flag-new">новинка</div>
                       <div class="actions">
                         <a href="#" class="buy">Купить</a>
                         <a href="#" class="bookmark">В закладки</a>
@@ -238,7 +251,6 @@
                     </div>
 
                     <div class="catalog-item">
-                      <div class="flag flag-new">новинка</div>
                       <div class="actions">
                         <a href="#" class="buy">Купить</a>
                         <a href="#" class="bookmark">В закладки</a>
@@ -278,7 +290,7 @@
           <div class="column-1">
 
                  <a class="footer-logo" href="index.html">
-                  <img src="img/technomart-footer.png" alt="Логотип Техномарт"/>
+                  <img src="img/technomart-footer.png" width="138" height="23" alt="Логотип Техномарт"/>
                  </a>
             
                   <p class="">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
