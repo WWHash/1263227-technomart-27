@@ -1294,6 +1294,39 @@ aside h2 {
 
 }
 
+
+
+.paginator {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 285px;
+    margin-bottom: 40px;
+
+}
+
+.paginator a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 36px;
+    height: 36px;
+    color: #000;
+    border-radius: 3px;
+    border: 1px solid #c9c9c9;
+}
+
+.paginator .active {
+    color: #fff;
+    background-color: #ee3643;
+    border: 1px solid #ee3643;
+}
+
+.paginator a:last-child {
+    width: 140px;
+}
 /*страница каталога*/
 
 
