@@ -777,13 +777,12 @@ ul {
 /*сервисы*/
 
 .service{
+    padding: 40px 0;
     margin-bottom: 40px;
     background-color: #f4f7f9;
 }
 
-.service h2,
-.company h2,
-.product-description h2 {
+.service h2 {
     font-size: 30px;
     font-weight: normal;
     line-height: 24px;
@@ -792,10 +791,7 @@ ul {
     text-transform: uppercase;
 }
 
-.service p,
-.contact-company p,
-.about-company p,
-.product-description p {
+.service p {
     font-family: "PTSans", sans-serif;
     font-size: 13px;
     line-height: 24px;
