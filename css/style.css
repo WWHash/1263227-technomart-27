@@ -14,12 +14,10 @@ main {
     background-color: #ffffff;
 }
 
-
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
 
 h1,
 h2,
@@ -29,13 +27,11 @@ p {
     padding: 0;
 }
 
-
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 
 .btn {
     display: flex;
@@ -48,7 +44,6 @@ ul {
     text-transform: uppercase;
 }
 
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -60,17 +55,12 @@ ul {
     overflow: hidden;
   }
 
-
 .container {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-
 }
-
 /*header*/
-
-
 
 /*top-line*/
 
@@ -118,7 +108,6 @@ ul {
 }
 
 
-
 .bookmark {
     width: 150px;
     padding: 12px 0 12px 0;
@@ -140,7 +129,6 @@ ul {
 .added-basket {
     background-color: #ee3643;
 }
-
 
 .bookmark:hover,
 .bookmark:focus,
@@ -172,6 +160,7 @@ ul {
     background-color: #f4f7f9;
 }
 
+
 .main-header {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +168,7 @@ ul {
     margin-bottom: 42px;
     
 }
+
 .main-header .title {
     width: 200px;
     margin: 0;
@@ -190,7 +180,9 @@ ul {
     
 
     color: #ee3643;
+    white-space: pre-wrap;
 }
+
 
 .contacts {
     width: 270px;
@@ -240,7 +232,6 @@ ul {
     background-color: #ffffff;
 }
 
-
 .contact-init .login {
     padding-left: 42px;
     
@@ -267,6 +258,7 @@ ul {
     margin-bottom: 18px;
 }
 
+
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
@@ -284,7 +276,6 @@ ul {
     flex-grow: 1;
 }
 
-
 .navigation-list a {
     display: block;
     padding: 20px 33px;
@@ -293,18 +284,16 @@ ul {
     
 
     background-color: #32425c;
-    color: #ffffff;
-
-    
+    color: #ffffff;   
 }
+
 .navigation-list a:hover {
     background-color: #293449;
 }
+
 .navigation-list a:active {
     background-color: #1d2739;
 }
-
-
 
 /*header*/
 /*main*/
@@ -316,15 +305,13 @@ ul {
     margin-bottom: 30px;
 }
 
- .row-1 {
+ .promo .row-1,
+ .promo .row-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;   
 }
-.row-2 {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .column-promo {
     width: 300px;
@@ -345,9 +332,7 @@ ul {
     margin: 0;
     margin-bottom: 13px;
 
-    color: #ffffff;
-
-    
+    color: #ffffff;   
 }
 
 .promo-link {
@@ -404,14 +389,9 @@ ul {
     background-repeat: no-repeat;
     background-position: 191px 60%;
 }
-    
-
-
-
-
 /*promo*/
-/*slider*/
 
+/*slider*/
 
 .column-slider {
     width: 620px;
@@ -474,18 +454,19 @@ ul {
     border: none;
     background-color: transparent;
 
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
 .button-next {
     right: 20px;
     background-image: url(../img/icon-right.svg);
 }
+
 .button-back {
     left: 20px;
     background-image: url(../img/icon-left.svg);
 }
+
 /*slider*/
 /*popular-item*/
 
@@ -517,14 +498,12 @@ ul {
     line-height: 18px;
     padding: 10px 0px;
     color: #ffffff;
-
 }
 
 .catalog-items {
     display: flex;
 
     width: 700px;
-
   }
 
 .catalog-item {
@@ -541,7 +520,6 @@ ul {
     border: 1px solid #ccc;
   }
 
-  
 
   .catalog-item .flag {
     position: absolute;
@@ -574,8 +552,8 @@ ul {
     z-index: 10;
   }
 
-  .catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+ .catalog-item .actions .buy,
+ .catalog-item .actions .bookmark {
   display: block;
   width: 129px;
   margin: 0 auto;
@@ -596,7 +574,7 @@ ul {
   text-transform: uppercase;
 }
 
-.catalog-item .actions .bookmark {
+ .catalog-item .actions .bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
@@ -687,7 +665,6 @@ ul {
 }
 
 
-
 .brands-list {
     display: flex;
     flex-wrap: wrap;
@@ -695,8 +672,6 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    
-
 }
 
 .brands-list-item a {
@@ -706,9 +681,11 @@ ul {
     margin-bottom: 13px;
     border: 1px solid #eaeaea;
 }
+
 .brands-list-item a:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
+
 .brands-list-item a:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
@@ -798,10 +775,10 @@ ul {
 .service-title {
     margin-bottom: 52px;
 }
+
 .service-title p {
     width: 425px;
 }
-
 
 .service-wrapper {
     display: flex;
@@ -870,12 +847,8 @@ ul {
 }
 
 .service-content p {
-    width: 300px;
+    width: 297px;
 }
-
-
-
-
 
 /*сервисы*/
 
@@ -886,6 +859,10 @@ ul {
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 86px;
+}
+
+.company-info {
+    width: 545px;
 }
 
 .company h2 {
@@ -906,7 +883,9 @@ ul {
     line-height: 24px;
 }
 
+
 .transfer p {
+    width: 415px;
     margin: 25px 0 19px 0;
 }
 
@@ -957,7 +936,13 @@ ul {
     text-align: center;
 }
 
+
+.company-contact {
+    width: 303px;
+}
+
 .company-contact p {
+    width: 200px;
     margin-bottom: 30px;
 }
 
@@ -1119,7 +1104,6 @@ ul {
     top: -2px;
     left: 95px;
 }
-
 
 
 .caption {
@@ -1348,9 +1332,7 @@ aside h2 {
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
-
 }
-
 
 
 .paginator {
@@ -1394,11 +1376,15 @@ aside h2 {
 }
 
 
-
 .footer-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+
+.footer-top .column-1 {
+    width: 335px;
 }
 
 .footer-top .column-1 p {
@@ -1513,7 +1499,6 @@ aside h2 {
     border-radius: 50%;
 
     background-color: #212a3a;
-
 }
 
 
@@ -1553,11 +1538,6 @@ aside h2 {
 /*футер-3*/
 
 /*footer*/
-
-
-
-
-
 
 
 /*button-red*/
