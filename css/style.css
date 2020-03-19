@@ -20,6 +20,7 @@ a {
     text-decoration: none;
 }
 
+
 h1,
 h2,
 h3,
@@ -28,11 +29,13 @@ p {
     padding: 0;
 }
 
+
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
 
 .btn {
     display: flex;
@@ -44,17 +47,8 @@ ul {
     border-radius: 3%;
     text-transform: uppercase;
 }
-/*
-.btn {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #ee3643;
-    border-radius: 3%;
-    text-align: center;
-    text-transform: uppercase;
-}
-*/
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -65,6 +59,7 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
 
 .container {
     width: 940px;
@@ -78,6 +73,7 @@ ul {
 
 
 /*top-line*/
+
 .top-line {
     display: flex;
     justify-content: space-between;
@@ -135,7 +131,7 @@ ul {
 .basket {
     width: 150px;
     padding: 12px 0 12px 0;
-    background-image: url(../img/cart-icon.svg);
+    background-image: url(../img/basket-icon.svg);
     background-repeat: no-repeat;
     background-position: 15px 50%;
     text-align: center;
