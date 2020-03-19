@@ -568,7 +568,7 @@ ul {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -675,7 +675,9 @@ ul {
 }
 
 .brands-list-item a {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     min-height: 145px;
     margin-bottom: 13px;
@@ -688,62 +690,6 @@ ul {
 
 .brands-list-item a:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
-}
-
-.brands-list .bosch {
-    background-color: #ffffff;
-    background-image: url(../img/bosch.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.brands-list .makita {
-    background-color: #ffffff;
-    background-image: url(../img/Makita.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.brands-list .dewalt {
-    background-color: #ffffff;
-    background-image: url(../img/DeWALT.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.brands-list .interskol {
-    background-color: #ffffff;
-    background-image: url(../img/Интерскол.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.brands-list .hitachi {
-    background-color: #ffffff;
-    background-image: url(../img/Hitachi.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.brands-list .lg {
-    background-color: #ffffff;
-    background-image: url(../img/LG.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.brands-list .aeg {
-    background-color: #ffffff;
-    background-image: url(../img/AEG.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.brands-list .metabo {
-    background-color: #ffffff;
-    background-image: url(../img/Metabo.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 /*брэнды*/
@@ -766,7 +712,7 @@ ul {
 
 .service p {
     width: 400px;
-    font-family: "PTSans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #000;
@@ -878,7 +824,7 @@ ul {
 .company p {
     margin: 0;
     margin-bottom: 20px;
-    font-family: "PTSans", "AArial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -1048,8 +994,10 @@ ul {
 
 .breadcrumbs a, .breadcrumbs span {
     position: relative;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
     color: #000;
-    font: 13px/18px "PT Sans","Arial",sans-serif;
     text-transform: uppercase;
 }
 
@@ -1161,7 +1109,7 @@ aside h2 {
 .filter-checkbox h3,
 .filter-radio h3 {
     padding: 10px 0;
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 30px;
@@ -1196,7 +1144,7 @@ aside h2 {
 .filter-radio label {
     position: relative;
     padding: 0 0 0 30px;
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 20px;
     color: #000;
@@ -1274,7 +1222,7 @@ aside h2 {
 }
 
 .description-content p {
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
 }
@@ -1323,7 +1271,7 @@ aside h2 {
     width: 140px;
     height: 39px;
 
-    font-family: "PTSans", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
 
@@ -1658,7 +1606,7 @@ aside h2 {
     width: 100%;
     padding: 10px 20px;
 
-    font-family: "PTSans", "Arial, sans-serif";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
@@ -1691,7 +1639,7 @@ aside h2 {
     width: 100%;
     padding: 10px 20px;
 
-    font-family: "PTSans", "Arial, sans-serif";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #a9a9a9;
