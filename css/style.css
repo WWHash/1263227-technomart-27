@@ -83,6 +83,7 @@ ul {
 
 
 .search-form input[type="search"] {
+    position: relative;
     width: 270px;
     padding: 12px 0 12px 50px;
     font-size: 17px;
@@ -92,38 +93,73 @@ ul {
     color: #ffffff;
 
     background-color: #293449;
-    background-image: url(../img/icon-search.svg);
+    background-image: url(../img/tech-sprite.svg);
     background-repeat: no-repeat;
-    background-position: 15px 50%;
+    background-position: 18px 12px;
+    opacity: 0.3;
+    
     cursor: pointer;
-
 }
 
 .search-form input:hover {
     background-color: #212a3a;
+    opacity: 1;
 }
+
 .search-form input:focus {
     background-color: #ffffff;
+    background-position: 18px -18px;
 }
 
 
 .bookmark {
+    position: relative;
     width: 150px;
     padding: 12px 0 12px 0;
-    background-image: url(../img/icon-bookmark.svg);
-    background-repeat: no-repeat;
-    background-position: 18px 12px;
+    
+    
     text-align: center;
+}
+
+.bookmark::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../img/tech-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: 16px -48px;
+    opacity: 0.3;  
+}
+
+.bookmark:hover::before,
+.basket:hover::before  {
+    opacity: 1;
 }
 
 
 .basket {
+    position: relative;
     width: 150px;
     padding: 12px 0 12px 0;
-    background-image: url(../img/basket-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 18px 50%;
     text-align: center;
+}
+
+.basket::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../img/tech-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: 15px -77px;
+    opacity: 0.3;
 }
 
 .added-basket {
@@ -134,8 +170,11 @@ ul {
 .bookmark:focus,
 .basket:hover,
 .basket:focus {
-    background-color: #212a3a;
-    
+    background-color: #212a3a;    
+}
+
+.basket:hover {
+    opacity: 1;
 }
 
 .order {
@@ -233,11 +272,28 @@ ul {
 }
 
 .contact-init .login {
+    position: relative;
     padding-left: 45px;
     
-    background-image: url(../img/icon-login.svg);
+   
+}
+
+.login::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 35px;
+    height: 35px;
+
+    background-image: url(../img/tech-sprite.svg);
     background-repeat: no-repeat;
-    background-position: 13px 50%;
+    background-position: 13px -106px;
+    opacity: 0.3;
+}
+
+.login:hover::before {
+    opacity: 1;
 }
 
 .contact-init .registration {
@@ -338,6 +394,14 @@ ul {
     border-radius: 3px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.promo-link a:hover {
+    opacity: 0.2;
+}
+
+.promo-link a:active {
+    opacity: 0.3;
 }
 
 .materials {
@@ -960,18 +1024,40 @@ ul {
     background-image: url(../img/icon-user.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    opacity: 0.3;
 }
 
 .login-account .exit {
+    position: relative;
     display: flex;
     width: 45px;
     height: 45px;
 
     background-color: #ffffff;
-    background-image: url(../img/icon-logout.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+ 
+}
 
+.exit::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 0;
+    left: 0;
+   
+    background-image: url(../img/tech-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: 14px -137px;
+    opacity: 0.3;
+}
+
+.exit:hover::before,
+.user-login:hover::after {
+    opacity: 1;
+}
+
+.user-login:active {
+    opacity: 0.3;
 }
 
 .account .my-orders {
@@ -987,6 +1073,16 @@ ul {
 
     color: #32425c;
     text-decoration: underline;
+}
+
+.account .my-orders:hover,
+.account .my-office:hover {
+    color: #ee3643;
+}
+
+.account .my-orders:active,
+.account .my-office:active {
+    opacity: 0.3;;
 }
 
 .account .my-orders:after {
