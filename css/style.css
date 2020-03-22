@@ -303,7 +303,7 @@ ul {
     justify-content: space-between;   
 
     padding-top: 62px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 }
 
 .promo-item {
@@ -483,7 +483,7 @@ ul {
 
 
     padding: 25px 20px;
-    margin-bottom: 14px;
+    margin-bottom: 11px;
     background-color: #f9f5f0;
 }
 
@@ -655,7 +655,7 @@ ul {
 /*брэнды*/
 
 .brands {
-    margin-bottom: 76px;
+    margin-bottom: 80px;
 }
 
 .title-brands h2 {
@@ -1579,14 +1579,15 @@ aside h2 {
     font-size: 18px;
     line-height: 24px;
     color: #f3f7f9;
+    padding-left: 3px;
     padding-bottom: 50px;
 }
 
 .footer-logo {
     display: block;
     width: 220px;
-    padding: 15px 0;
-    margin-bottom: 40px;
+    padding: 20px 0;
+    margin-bottom: 31px;
 
     background-color: #ee3643;
 
