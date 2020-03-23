@@ -936,7 +936,6 @@ ul {
 }
 
 /*сервисы*/
-
 /*company*/
 
 .company {
@@ -1889,7 +1888,6 @@ ul {
     font-size: 16px;
     list-style: 18px;
     color: #ffffff;
-
 }
 
 .social {
@@ -1959,22 +1957,6 @@ ul {
 /*footer*/
 
 
-/*button-red*/
-.button-red a {
-    display: block;
-
-    font-size: 14px;
-    line-height: 18px;
-    padding: 10px 0;
-    color: #ffffff;
-    background-color: #ee3643;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-align: center;
-}
-/*button-red*/
-
-
 /*modal*/
 
 .modal {
@@ -1994,8 +1976,6 @@ ul {
     width: 620px;
     margin-left: -310px;
     border-top: 7px solid #ee3643;
-    
-
 }
 
 .form-fields,
@@ -2018,7 +1998,6 @@ ul {
 
     background-color: transparent;
     border: none;
-
 }
 
 .modal-close::before,
@@ -2093,7 +2072,6 @@ ul {
     border-radius: 3px;
 }
 
-
 .form-index-modal input[type="text"]:hover,
 .form-index-modal input[type="email"]:hover {
     border-color: #b5b5b5;
@@ -2103,7 +2081,6 @@ ul {
 .form-index-modal input[type="email"]:focus {
     border-color: #ee3643;
 }
-
 
 
 .form-row-2 {
@@ -2135,7 +2112,6 @@ ul {
 }
 
 
-
 .form-row-3-wrapper {
     width: 460px;
 }
@@ -2153,7 +2129,6 @@ ul {
 
 
 .modal-map {
-    
     top: 50%;
     left: 50%;
     
