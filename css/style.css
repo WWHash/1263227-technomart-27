@@ -81,9 +81,12 @@ ul {
     background-color: #ca2c37;
 }
 
+.top-logo:active {
+    background-color: #ba2732;
+}
+
 
 .search-form input[type="search"] {
-    position: relative;
     width: 270px;
     padding: 12px 0 12px 50px;
     font-size: 17px;
@@ -96,9 +99,12 @@ ul {
     background-image: url(../img/tech-sprite.svg);
     background-repeat: no-repeat;
     background-position: 18px 12px;
-    opacity: 0.3;
-    
+    opacity: 0.3; 
     cursor: pointer;
+}
+
+.search-form ::placeholder {
+    color: #fff;
 }
 
 .search-form input:hover {
@@ -106,7 +112,12 @@ ul {
     opacity: 1;
 }
 
+.search-form:active::placeholder {
+    color: #000;
+}
+
 .search-form input:focus {
+    color: #000;
     background-color: #ffffff;
     background-position: 18px -18px;
 }
@@ -135,12 +146,6 @@ ul {
     opacity: 0.3;  
 }
 
-.bookmark:hover::before,
-.basket:hover::before  {
-    opacity: 1;
-}
-
-
 .basket {
     position: relative;
     width: 150px;
@@ -160,6 +165,18 @@ ul {
     background-repeat: no-repeat;
     background-position: 15px -77px;
     opacity: 0.3;
+}
+
+.bookmark:hover::before,
+.basket:hover::before  {
+    opacity: 1;
+}
+
+.basket:active::before,
+.bookmark:active::before,
+.bookmark:active,
+.basket:active {
+    opacity: 0.5;
 }
 
 .added-basket {
@@ -225,6 +242,7 @@ ul {
 }
 
 .contacts .phone {
+    display: block;
     width: 145px;
     padding: 10px 50px 10px 69px;  
     
@@ -296,6 +314,10 @@ ul {
     opacity: 1;
 }
 
+.login:active::before {
+    opacity: 0.3;
+}
+
 .contact-init .registration {
     margin-left: 10px;
 }
@@ -346,6 +368,7 @@ ul {
 
 .navigation-list a:active {
     background-color: #1d2739;
+    opacity: 0.3;
 }
 
 /*header*/
@@ -378,7 +401,7 @@ ul {
     color: #ffffff;   
 }
 
-.promo-link a {
+.promo-link {
     display: block;
     width: 135px;
     font-size: 14px;
@@ -396,11 +419,11 @@ ul {
     text-align: center;
 }
 
-.promo-link a:hover {
+.promo-link:hover {
     opacity: 0.2;
 }
 
-.promo-link a:active {
+.promo-link:active {
     opacity: 0.3;
 }
 
@@ -503,7 +526,7 @@ ul {
     width: 195px;
     left: 26px;
     bottom: 25px;
-    display: inline-block;
+    display: block;
 
     font-size: 14px;
     line-height: 18px;
@@ -513,6 +536,14 @@ ul {
     border-radius: 3px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.button-img a:hover {
+    background-color: #ca2c37;
+}
+
+.button-img a:active {
+    background-color: #ba2732;
 }
 
 .slider button {
@@ -571,6 +602,14 @@ ul {
     color: #ffffff;
 }
 
+.popular-items a:hover {
+    background-color: #ca2c37;
+}
+
+.popular-items a:active {
+    background-color: #ba2732;
+}
+
 .catalog-items {
     display: flex;
     flex-wrap: wrap;
@@ -588,6 +627,10 @@ ul {
     text-align: center;
     
     border: 1px solid #ccc;
+}
+
+.catalog-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item:nth-child(4n) {
@@ -612,7 +655,7 @@ ul {
 }
 
 
-  .catalog-item .actions {
+.catalog-item .actions {
     position: absolute;
     top: 0;
     left: 0;
@@ -623,10 +666,10 @@ ul {
     
     background-color: rgba(255,255,255,0.9);
     z-index: 10;
-  }
+}
 
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
     display: block;
     width: 129px;
     margin: 0 auto;
@@ -644,7 +687,16 @@ ul {
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
-    }
+}
+
+.actions .buy:hover {
+    background-color: #5fbb2d;
+}
+
+.actions .buy:active {
+    background-color: #518534;
+    border: none;
+}
 
 .catalog-item .actions .bookmark {
     color: #32425c;
@@ -652,7 +704,16 @@ ul {
     border-bottom-color: #63a63e;
 }
 
-  .catalog-item .actions {
+.actions .bookmark:hover {
+    border-color: #32425c;
+}
+
+.actions .bookmark:active {
+    border-color: #32425c;
+    opacity: 0.3;
+}
+
+.catalog-item .actions {
     display: none;
 }
   
@@ -766,6 +827,7 @@ ul {
 
 .brands-list-item a:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+    opacity: 0.5;
 }
 
 /*брэнды*/
@@ -808,16 +870,13 @@ ul {
 }
 
 .service-menu {
-    width: 300px;
-}
-
-.service-menu-list {
     position: relative;
+    
     width: 240px;
     margin-top: 17px;
 }
 
-.service-menu-list::after {
+.service-menu::after {
     width: 10px;
     position: absolute;
     top: -33px;
@@ -828,7 +887,7 @@ ul {
     background: url(../img/shadow-service-ul.png) no-repeat 0 0;
 }
 
-.service-menu-list a {
+.service-menu a {
     display: block;
     padding: 16px 0 16px 22px;
     font-size: 21px;
@@ -837,16 +896,19 @@ ul {
 
     color: #fff;
     background-color: #32425c;
+
+    box-shadow: inset 0px 1px 0 0 #293449;
 }
 
-.service-menu-list a:hover {
-    color: #32425c;
-    background-color: #fff;
+.service-menu a:hover {
+    color: #fff;
+    background-color: #293449;
 }
 
-.service-menu-list .active {
+.service-menu a:active {
     color: #32425c;
     background-color: #fff;
+    box-shadow: none;
 }
 
 .service-content {
@@ -960,6 +1022,13 @@ ul {
     text-align: center;
 }
 
+.transfer-btn:hover {
+    background-color: #ca2c37;
+}
+
+.transfer-btn:active {
+    background-color: #ba2732;
+}
 
 .company-contact {
     width: 303px;
@@ -970,14 +1039,11 @@ ul {
     margin-bottom: 30px;
 }
 
-.company-image {
-    margin-bottom: 36px;
-}
-
 .company-btn {
     display: block;
     width: 100%;
     padding: 9px 0;
+    margin-top: 36px;
     color: #ffffff;
 
 
@@ -985,6 +1051,14 @@ ul {
     border-radius: 3px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.company-btn:hover {
+    background-color: #ca2c37;
+}
+
+.company-btn:active {
+    background-color: #ba2732;
 }
 
 /*company*/
@@ -1187,11 +1261,11 @@ ul {
     justify-content: space-between;
 }
 
-aside {
+.aside-bar {
     width: 220px;
 }
 
-aside h2 {
+.aside-bar h2 {
     padding: 10px 0 10px 19px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
@@ -1320,7 +1394,7 @@ aside h2 {
     width: 19px;
     height: 19px;
     border-radius: 3px;
-    border: 2px solid #c9c9c9;
+    border: 2px solid #c5c5c5;
     content: "";
 }
 
@@ -1330,11 +1404,16 @@ aside h2 {
     left: 10px;
     width: 7px;
     height: 16px;
-    border-right: 5px solid #c9c9c9;
-    border-bottom: 5px solid #c9c9c9;
+    border-right: 5px solid #c5c5c5;
+    border-bottom: 5px solid #c5c5c5;
     transform: rotate(45deg);
     box-shadow: 2px 0 0 0 white, inset -2px 0 0 0 white;
     content: "";
+}
+
+.filter-checkbox label:hover::before,
+.filter-checkbox label:hover::after {
+    border-color: #b5b5b5;
 }
 
 .filter-radio label::before {
@@ -1345,7 +1424,7 @@ aside h2 {
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    border: 2px solid #c9c9c9;
+    border: 2px solid #c5c5c5;
     content: "";
 }
 
@@ -1357,8 +1436,13 @@ aside h2 {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: #c9c9c9;
+    background-color: #c5c5c5;
     content: "";
+}
+
+.filter-radio label:hover::before,
+.filter-radio label:hover::after {
+    border-color: #b5b5b5;
 }
 
 .filter-checkbox input,
@@ -1377,13 +1461,68 @@ aside h2 {
     line-height: 18px;
 
     background-color: #fff;
-    border: 1px solid #c9c9c9;
+    border: 1px solid #e5e5e5;
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
 }
+
+.filter-btn:hover {
+    border-color: #bdc6ca;
+}
+
+.filter-btn:active {
+    border-color: #ee3643;
+}
 /*кнопка в конце форм*/
 /*Результат поиска. Карточка товара*/
+.result {
+    width: 700px;
+}
+
+
+.result .filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 38px;
+
+    padding: 0 16px 0 19px;
+    margin-bottom: 20px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #000;
+    background-color: #f7f3ec;
+    text-transform: uppercase;
+}
+
+
+.result .filter-by {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 360px;
+    margin-left: 94px;
+}
+
+.result .filter-by a {
+    color: #b6b3ae;
+    border-bottom: 1px dotted #ee3643;
+}
+
+.filter-by a:hover {
+    color: #000;
+    border-bottom: 1px solid #ee3643;
+}
+
+.filter-by a:active {
+    color: #ee3643;
+    border: none;
+}
+
 
 .arrows-control {
     display: flex;
@@ -1402,21 +1541,34 @@ aside h2 {
 }
 
 .arrows-up {
-    border-bottom: 10px solid #ee3643;
+    border-bottom: 10px solid #c6c2bd;
 }
 
 .arrows-down {
     border-top: 10px solid #c6c2bd;
 }
 
-
-.result {
-    width: 700px;
+.arrows-up:hover {
+    border-bottom: 10px solid #231f20;
 }
+
+.arrows-down:hover {
+    border-top: 10px solid #231f20;
+}
+
+.arrows-up:active {
+    border-bottom:  10px solid #ee3643;
+}
+
+.arrows-down:active {
+    border-top: 10px solid #ee3643;
+}
+
 
 .result-catalog {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 32px;
 }
 
 .result-catalog-item {
@@ -1431,6 +1583,10 @@ aside h2 {
     text-align: center;
     
     border: 1px solid #ccc;
+}
+
+.result-catalog-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .result-catalog-item:nth-child(3n) {
@@ -1468,8 +1624,8 @@ aside h2 {
     z-index: 10;
   }
 
-.result-catalog-item .actions .buy,
-.result-catalog-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
     display: block;
     width: 129px;
     margin: 0 auto;
@@ -1490,7 +1646,7 @@ aside h2 {
     text-transform: uppercase;
 }
 
-.result-catalog-item .actions .bookmark {
+.actions .bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
@@ -1522,7 +1678,7 @@ aside h2 {
     min-height: 40px;
     padding: 0 25px;
     margin-top: 10px;
-    margin-bottom: 15px;    
+    margin-bottom: -7px;    
 }
   
 .result-catalog-item .discount {
@@ -1559,44 +1715,6 @@ aside h2 {
     border: 20px solid white;
     border-left-color: #ee3643;
 }
-
-
-.result .filter {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 38px;
-
-    padding: 0 16px 0 19px;
-    margin-bottom: 20px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-
-    color: #000;
-    background-color: #f7f3ec;
-    text-transform: uppercase;
-}
-
-.result .filter-by {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 360px;
-}
-
-.result .filter-by a:first-child {
-    color: #f06870;
-    text-transform: uppercase;
-}
-
-.result .filter-by a:nth-child(2),
-.result .filter-by a:last-child {
-    color: #b6b3ae;
-    border-bottom: 1px dotted #ee3643; 
-}
- 
 /*Результаты поиска. Карточка товара*/
 
 .paginator {
@@ -1604,7 +1722,7 @@ aside h2 {
     justify-content: space-between;
     
     width: 285px;
-    margin-bottom: 72px;
+    margin-bottom: 60px;
 
 }
 
@@ -1618,7 +1736,15 @@ aside h2 {
     height: 36px;
     color: #000;
     border-radius: 3px;
-    border: 1px solid #c9c9c9;
+    border: 1px solid #e5e5e5;
+}
+
+.paginator a:hover {
+    border-color: #bdc6ca;
+}
+
+.paginator a:active {
+    border-color: #ee3643;
 }
 
 .paginator .active {
@@ -1821,6 +1947,15 @@ aside h2 {
     color: #ffd180;
 }
 
+.footer-feedback a:hover,
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer-feedback a:active,
+.footer-copyright a:active {
+    color: #ee3643;
+}
 /*footer*/
 
 
