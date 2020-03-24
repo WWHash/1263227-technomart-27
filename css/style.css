@@ -769,13 +769,13 @@ ul {
 .transfer-list {
     width: 220px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     padding: 0;
 }
 .transfer-list li {
     position: relative;
     padding-left: 35px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
