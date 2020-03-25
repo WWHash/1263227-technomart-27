@@ -872,6 +872,8 @@ a {
 }
 .user-account {
     display: flex;
+    background-color: #fff;
+    margin-bottom: 7px;
 }
 .user-account .user-login {
     position: relative;
@@ -882,7 +884,6 @@ a {
     padding-left: 47px;
     background: #fff;
     font-size: 21px;
-    margin-bottom: 7px;
     line-height: 18px;
     color: #000;
 }
