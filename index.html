@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <div class="top-line container">
 
             <a class="top-logo" href="index.html">
@@ -30,13 +30,13 @@
 
         <div class="color-override">
             <div class="container">
-                <div class="main-header">
+                <div class="middle-line">
 
                     <p class="title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
                     <div class="contacts">
                         <a class="phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-                        <p class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </div>
 
                     <div class="contact-init">
@@ -246,7 +246,7 @@
 
                 <div class="service-wrapper">
                     <ul class="service-menu">
-                        <li><a href="#">Доставка</a></li>
+                        <li><a class="active" href="#">Доставка</a></li>
                         <li><a href="#">Гарантия</a></li>
                         <li><a href="#">Кредит</a></li>
                     </ul>
@@ -334,13 +334,13 @@
                 <div class="social">
                     <ul class="social-list">
                         <li class="social-vk">
-                            <a href="#"></a>
+                            <a href="#"><span class="visually-hidden">Вконтакте</span></a>
                         </li>
                         <li class="social-fb">
-                            <a href="#"></a>
+                            <a href="#"><span class="visually-hidden">Фейсбук</span></a>
                         </li>
                         <li class="social-insta">
-                            <a href="#"></a>
+                            <a href="#"><span class="visually-hidden">Инстаграм</span></a>
                         </li>
                     </ul>
                 </div>
@@ -357,7 +357,7 @@
         </div>
     </footer>
 
-    <section class="modal modal-index-technomart">
+    <section class="modal modal-index-technomart visually-hidden">
         <h2 class="visually-hidden">Напишите нам!</h2>
 
         <form class="form-index-modal" action="https://echo.htmlacademy.ru" method="POST">
@@ -408,7 +408,7 @@
 
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-
+<script src="js/modal.js"></script>
 </body>
 
 </html>
