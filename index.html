@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<>
     <header class="main-header">
         <div class="top-line container">
 
@@ -287,7 +287,7 @@
                 <p>Вы можете забрать товар сами, заехав в наш офис:
                 </p>
 
-                <img src="img/map.png" alt=" Адрес на карте" width="300" height="158" />
+                <a href="map.html"><img src="img/map.png" alt=" Адрес на карте" width="300" height="158" /></a>
 
                 <a class="company-btn" href="#">Заблудились? Напишите нам!</a>
 
@@ -408,7 +408,21 @@
 
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+    <section class="modal modal-basket visually-hidden">
+        <h2>Товар добавлен в корзину!</h2>
+
+        <div class="modal-basket-submit">
+            <div class="container">
+                <button class="btn btn-basket" type="button">Оформить заказ</button>
+                <button class="btn btn-basket btn-basket-bg-fff" type="button">Продолжить покупки</button>
+            </div>
+        </div>
+        <button class="modal-close close-basket" type="button"><span class="visually-hidden">Закрыть</span></button>
+
+    </section>
 <script src="js/modal.js"></script>
+<script src="js/modal-basket.js"></script>
 </body>
 
 </html>

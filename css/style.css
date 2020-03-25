@@ -18,16 +18,6 @@ a {
     border-radius: 3%;
     text-transform: uppercase;
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 .container {
     width: 940px;
     margin: 0 auto;
@@ -493,6 +483,7 @@ a {
     line-height: 20px;
     font-weight: bold;
     text-align: center;
+    vertical-align: middle;
     border: 1px solid #ccc;
 }
 .catalog-item:hover {
@@ -929,7 +920,9 @@ a {
 .exit:hover::before, .user-login:hover::after {
     opacity: 1;
 }
-.user-login:active {
+.exit:active::before {
+    opacity: 0.3;
+}.user-login:active {
     opacity: 0.3;
 }
 .user-init .orders {
@@ -1132,7 +1125,9 @@ a {
     padding: 0 0 20px 0;
 }
 .filter-checkbox {
+    position: relative;
     border-bottom: 1px solid #c9c9c9;
+    overflow: hidden;
 }
 .filter-checkbox label, .filter-radio label {
     position: relative;
@@ -1169,6 +1164,19 @@ a {
 .filter-checkbox label:hover::before, .filter-checkbox label:hover::after {
     border-color: #b5b5b5;
 }
+.filter-checkbox input:focus + label::before,
+.filter-radio input:focus + label::before {
+    border-color: #b5b5b5;
+}
+.filter-checkbox input:disabled + label::before,
+.filter-radio input:disabled + label::before {
+    border-color: #b5b5b5;
+    opacity: 0.3;
+}
+.filter-radio input:disabled + label,
+.filter-checkbox input:disabled + label {
+    opacity: 0.3;
+}
 .filter-radio label::before {
     position: absolute;
     top: 0;
@@ -1193,7 +1201,7 @@ a {
     border-color: #b5b5b5;
 }
 .filter-checkbox input, .filter-radio input {
-    visibility: hidden;
+    opacity: 0;
 }
 /*кнопка в конце форм*/
 .filter-btn {
@@ -1752,12 +1760,12 @@ a {
     width: 100%;
 }
 .modal-basket {
-    display: none;
     top: 50%;
     left: 50%;
     width: 620px;
     margin-left: -290px;
     border-top: 7px solid #ee3643;
+    z-index: 20;
 }
 .modal-basket h2 {
     padding: 80px 0 80px 30px;
@@ -1790,3 +1798,14 @@ a {
     background-color: #fff;
 }
 /*modal*/
+.visually-hidden,
+.breadcrumbs .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

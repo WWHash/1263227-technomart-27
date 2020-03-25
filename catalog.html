@@ -111,18 +111,22 @@
                             <legend>Производители:</legend>
 
                             <div class="checkbox">
+                                
                                 <input id="bosch" type="checkbox" name="bosch" checked/>
                                 <label for="bosch">Bosch</label>
-
+                              
+                              
                                 <input id="intercol" type="checkbox" name="intercol" />
                                 <label for="intercol">Интеркол</label>
-
+                            
+                              
                                 <input id="makita" type="checkbox" name="makita" checked/>
                                 <label for="makita">Makita</label>
 
+                               
                                 <input id="dewalt" type="checkbox" name="dewalt" />
                                 <label for="dewalt">Dewalt</label>
-
+                                
                                 <input id="hitachi" type="checkbox" name="hitachi" />
                                 <label for="hitachi">Hitachi</label>
 
@@ -353,7 +357,7 @@
         </div>
     </footer>
 
-    <section class="modal modal-basket">
+    <section class="modal modal-basket visually-hidden">
         <h2>Товар добавлен в корзину!</h2>
 
         <div class="modal-basket-submit">
@@ -362,10 +366,11 @@
                 <button class="btn btn-basket btn-basket-bg-fff" type="button">Продолжить покупки</button>
             </div>
         </div>
-        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="modal-close close-basket" type="button"><span class="visually-hidden">Закрыть</span></button>
 
     </section>
 
+    <script src="js/modal-basket.js"></script>
 </body>
 
 </html>
