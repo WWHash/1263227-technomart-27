@@ -299,23 +299,27 @@ a {
     color: #ffffff;
 }
 .promo-link {
+    width: 135px;
+    margin: 0 0 25px 24px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.promo-link a {
     display: block;
     width: 135px;
     font-size: 14px;
     line-height: 18px;
-    padding: 10px 0;
-    margin: 0 0 25px 24px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+    padding: 10px 0;    
+    color: #fff;  
     text-transform: uppercase;
     text-align: center;
+    opacity: 1;
 }
 .promo-link:hover {
-    opacity: 0.2;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .promo-link:active {
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .materials {
     position: relative;
@@ -430,10 +434,12 @@ a {
 .button-next {
     right: 20px;
     background-image: url(../img/icon-right.svg);
+    cursor: pointer;
 }
 .button-back {
     left: 25px;
     background-image: url(../img/icon-left.svg);
+    cursor: pointer;
 }
 /*slider*/
 /*popular-item*/
