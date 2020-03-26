@@ -1805,6 +1805,7 @@ a {
     background-color: #fff;
 }
 /*modal*/
+/*скрыть эллемент*/
 .visually-hidden,
 .breadcrumbs .visually-hidden {
     position: absolute;
